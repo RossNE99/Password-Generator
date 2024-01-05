@@ -1,5 +1,5 @@
 // Array of special characters to be included in password
-var specialCharacters = [
+var specialCharactersArr = [
   '@',
   '%',
   '+',
@@ -24,6 +24,9 @@ var specialCharacters = [
   '_',
   '.'
 ];
+
+// Array of numeric characters to be included in password
+var numericCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
 // Array of lowercase characters to be included in password
 var lowerCasedCharacters = [
@@ -111,8 +114,44 @@ function getRandomNumber(lenght=9) {
 }
 
 // Function to generate password with user input
-function generatePassword() {
+function generatePassword(passwordOptions) {
+  console.log(passwordOptions)
+ 
+  var {passwordLength, lowerCase, upperCase, numeric, specialCharacters } = passwordOptions;
+  var characters = "";
+  var password = "";
 
+  // Include lowercase characters if specified
+  if (lowerCase) {
+    characters += lowerCasedCharacters.join('');
+    password += lowerCasedCharacters[getRandomNumber(lowerCasedCharacters.length)]  //make sure that a lowerCase is included if slected 
+  }
+
+  // Include uppercase characters if specified
+  if (upperCase) {
+      characters += upperCasedCharacters.join('');
+      password += upperCasedCharacters[getRandomNumber(upperCasedCharacters.length)]  //make sure that a upperCase is included if slected 
+  }
+
+  // Include numeric characters if specified
+  if (numeric) {
+      characters += numericCharacters.join('');
+      password += numericCharacters[getRandomNumber(numericCharacters.length)]  //make sure that a number is included if slected 
+  }
+
+  // Include special characters if specified
+  if (specialCharacters) {
+      characters += specialCharactersArr.join('');
+      password += specialCharactersArr[getRandomNumber(specialCharactersArr.length)]  //make sure that a specialCharacters's is included if slected 
+  }
+
+  //genarate password and randommise the order of characters in password
+  for (let i = password.length; i < passwordLength; i++) {
+      const randomIndex = getRandomNumber(characters.length)
+      password += characters.charAt(randomIndex);
+  }
+
+  return password;
 }
 
 // Get references to the #generate element
@@ -120,7 +159,7 @@ var generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var password = generatePassword(getPasswordOptions());
   var passwordText = document.querySelector('#password');
 
   passwordText.value = password;
