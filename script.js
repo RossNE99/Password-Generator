@@ -25,9 +25,6 @@ var specialCharacters = [
   '.'
 ];
 
-// Array of numeric characters to be included in password
-var numericCharacters = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-
 // Array of lowercase characters to be included in password
 var lowerCasedCharacters = [
   'a',
@@ -109,8 +106,8 @@ function getPasswordOptions() {
 }
 
 // Function for getting a random element from an array
-function getRandom(arr) {
-  return arr[Math.floor((Math.random()*options.length))];
+function getRandomNumber(lenght=9) {
+  return Math.floor(Math.random()*lenght);
 }
 
 // Function to generate password with user input
