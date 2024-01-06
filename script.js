@@ -91,11 +91,11 @@ var upperCasedCharacters = [
 // Function to prompt user for password options
 function getPasswordOptions() {
   var passwordLength = 8;
-  passwordLength = prompt("Please enter Password Length, must be between 8 and 16 characters. Default is 8")
-    while (!parseInt(passwordLength) || passwordLength<8 || passwordLength>16){
+  passwordLength = prompt("Please enter Password Length, must be between 8 and 128 characters. Default is 8")
+    while (!parseInt(passwordLength) || passwordLength<8 || passwordLength>128){
       !parseInt(passwordLength) ? passwordLength = prompt("Password Length must be a number")
       : passwordLength<8 ? passwordLength = prompt("Password Length must greater then 8")
-      : passwordLength = prompt("Password Length must Less then 16")
+      : passwordLength = prompt("Password Length must Less then 128")
     }
 
   while (!lowerCase && !upperCase && !numeric && !specialCharacters){
