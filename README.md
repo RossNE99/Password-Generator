@@ -1,79 +1,102 @@
-# Module 5 Challenge: Password Generator
+# Password-Pal-JS 🔒🔑
 
-## Overview
+## Description
+Welcome to Password-Pal-JS, your trusty sidekick in the realm of password security! This client-side password generator is designed to empower you with 100% random, ultra-secure passwords whilst also offering the flexibility to tailor them to your unique preferences. Dive into the incredible features that make Password-Pal-JS your go-to password companion! 💪 [see more](#Features)
 
-This week’s challenge requires you to create an application that an employee can use to generate a random password based on criteria they’ve selected by modifying starter code. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
+The driving force behind Password-Pal-JS stems from our commitment to revolutionising the way you approach password generation. In a world filled with digital challenges, we understand the importance of having a reliable ally by your side.
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of Password Special Characters from the OWASP Foundation](https://www.owasp.org/index.php/Password_special_characters).
+Our goal is to rescue you and your team from the tedious task of password creation. By generating robust, secure passwords right on your device, Password-Pal-JS ensures that your sensitive information stays in your hands, eliminating worries about data being stored elsewhere on the internet🚀.
 
-## Instructions
+This project takes a user-friendly approach by utilising prompts and confirms to seamlessly collect your requirements. Say goodbye to complex and time-consuming processes; Password-Pal-JS makes password generation a breeze.
+
+
+## Table of Contents
+
+- [Dev Requirements](#Dev-Requirements)
+- [Dev Environment Setup](#Dev-Environment-Setup)
+- [Enduser usage instructions](#End-user-usage-instructions)
+- [Features](#Features)
+- [How to contribute](#How-to-contribute)
+- [technologies ](#technologies)
+- [Screenshot](#Screenshot)
+- [Credits](#credits)
+- [License](#license)
+
+## Dev Requirements
+Git/GitBash, VS Code, and the source code, of course! 🛠️
+
+## Dev Environment Setup
+To get the development environment running:
+1. Clone this repo
+2. Open the repo folder in VS Code
+3. Right-click on `index.html` and open it using the default browser.
+
+- `index.html`: Contains all HTML code for the webpage
+- `assets/js/script.js`: Contains all javaScript code for the webapp
+- `assets/css/style.css`: Contains all CSS styling for the webapp
+- `assets/images/`: Contains all images used in the webpage
+
+## Enduser usage instructions
+There is no special requirements for end users. Simply visit [here](https://rossne99.github.io/Password-Pal-JS/) To genatate a new password press on the genarate button, this will ask you a series of questions to taylor the password to your needs
+
+## Features
+### Passwords can include the following;
+- **Lower case Characters 🔡**
+- **Upper case Characters 🔠**
+- **Number's 🔢**
+- **Special Characters 🔣**
+
+### Passwords are
+- **100% Random 👽**
+- **Sercure 🔐**
+- **Genarated on YOUR device, fully offline 🙅‍♂️**
+
+## How to contribute
+1. Fork this repository
+2. Clone the repository
+3. Create a branch for your bug fix or feature
+4. Make necessary changes and commit those changes
+5. Push changes to GitHub
+6. Create a pull request to this repo to submit your changes for review
+
+## Technologies
+- **JavaScript**
+- **HTML**
+
+## Screenshot
 
 The following image shows the web application's appearance and functionality:
 
-![password generator demo](./assets/05-javascript-challenge-demo.png)
+![Screenshott](assets/images/Password-Pal-JS.png)
+
+> **Note**: This applcation is fully responsive.
 
 
-* Generate a password when the button is clicked
-  * Present a series of prompts for password criteria
-    * Length of password
-      * At least 8 characters but no more than 128.
-    * Character types
-      * Lowercase
-      * Uppercase
-      * Numeric
-      * Special characters ($@%&*, etc)
-  * Code should validate for each input and at least one character type should be selected
-  * Once prompts are answered then the password should be generated and displayed in an alert or written to the page
-
-## Grading Requirements
-
-This challenge is graded based on the following criteria: 
-
-### Technical Acceptance Criteria: 40%
-
-* Satisfies all of the above acceptance criteria plus the following:
-
-  * The challenge should not produce any errors in the console when you inspect it using Chrome DevTools.
-
-### Deployment: 32%
-
-* Application deployed at live URL.
-
-* Application loads with no errors.
-
-* Application GitHub URL submitted.
-
-* GitHub repository that contains application code.
-
-### Application Quality: 15%
-
-* Application user experience is intuitive and easy to navigate.
-
-* Application user interface style is clean and polished.
-
-* Application resembles the mock-up functionality provided in the challenge instructions.
-
-### Repository Quality: 13%
-
-* Repository has a unique name.
-
-* Repository follows best practices for file structure and naming conventions.
-
-* Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-* Repository contains multiple descriptive commit messages.
-
-* Repository contains quality README file with description, screenshot, and link to deployed application.
-
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+## Credits 
+- **Ross** - Source Code
 
 ---
 
-© 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## Licence
+
+MIT License
+
+Copyright (c) 2023 RossNE99
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
