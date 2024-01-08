@@ -62,6 +62,7 @@ There is no special requirements for end users. Simply visit [here](https://ross
 ## Technologies
 - **JavaScript**
 - **HTML**
+- **CSS**
 
 ## Screenshot
 
