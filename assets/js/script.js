@@ -29,7 +29,7 @@ function getPasswordOptions() {
   return passwordOptions
 }
 
-// Function for getting a random element from an array
+// Function for getting a random number
 function getRandomNumber(length) {
   return Math.floor(Math.random()*length);
 }
