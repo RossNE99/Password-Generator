@@ -48,26 +48,26 @@ function generatePassword(passwordOptions) {
 
   // Include uppercase characters if specified
   if (upperCase) {
-      characters += upperCasedCharacters.join('');
-      password += upperCasedCharacters[getRandomNumber(upperCasedCharacters.length)]  //make sure that a upperCase is included if slected 
+    characters += upperCasedCharacters.join('');
+    password += upperCasedCharacters[getRandomNumber(upperCasedCharacters.length)]  //make sure that a upperCase is included if slected 
   }
 
   // Include numeric characters if specified
   if (numeric) {
-      characters += numericCharacters.join('');
-      password += numericCharacters[getRandomNumber(numericCharacters.length)]  //make sure that a number is included if slected 
+    characters += numericCharacters.join('');
+    password += numericCharacters[getRandomNumber(numericCharacters.length)]  //make sure that a number is included if slected 
   }
 
   // Include special characters if specified
   if (specialCharacters) {
-      characters += specialCharactersArr.join('');
-      password += specialCharactersArr[getRandomNumber(specialCharactersArr.length)]  //make sure that a specialCharacters's is included if slected 
+    characters += specialCharactersArr.join('');
+    password += specialCharactersArr[getRandomNumber(specialCharactersArr.length)]  //make sure that a specialCharacters's is included if slected 
   }
 
   //genarate password and randommise the order of characters in password
   for (let i = password.length; i < passwordLength; i++) {
-      const randomIndex = getRandomNumber(characters.length)
-      password += characters.charAt(randomIndex);
+    const randomIndex = getRandomNumber(characters.length)
+    password += characters.charAt(randomIndex);
   }
   return password;
 }
